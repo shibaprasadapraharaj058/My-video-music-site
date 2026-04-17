@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Video Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-left"></div>
+    <div class="page-glow glow-right"></div>
+
+    <main class="player-page">
+      <section class="hero">
+        <p class="eyebrow">Video Music Player</p>
+        <h1>Stream your favorite visuals with a clean, modern vibe.</h1>
+        <p class="hero-copy">
+          A simple HTML and CSS music player website with a featured video area,
+          playlist cards, and a stylish neon-glass layout.
+        </p>
+      </section>
+
+      <input type="radio" name="video-tab" id="video-1" checked />
+      <input type="radio" name="video-tab" id="video-2" />
+      <input type="radio" name="video-tab" id="video-3" />
+
+      <section class="player-shell">
+        <div class="screen-area">
+          <div class="top-strip">
+            <div>
+              <p class="mini-label">Now Playing</p>
+              <h2>Featured Sessions</h2>
+            </div>
+            <span class="status-pill">HD visuals</span>
+          </div>
+
+          <div class="screens">
+            <article class="screen screen-1">
+              <div class="screen-media">
+                <video controls preload="metadata">
+                  <source src="HINDI.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="screen-info">
+                <div>
+                  <p class="track-tag">HINDI</p>
+                  <h3>Night Drive HINDI</h3>
+                  <p class="track-meta">Luna City | 04:12 | MP4 Visual Mix</p>
+                </div>
+                <p class="track-description">
+                  A sleek neon ride soundtrack with cinematic night visuals.
+                </p>
+              </div>
+            </article>
+
+            <article class="screen screen-2">
+              <div class="screen-media">
+                <video controls preload="metadata">
+                  <source src="ODIA.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="screen-info">
+                <div>
+                  <p class="track-tag">ODIA</p>
+                  <h3>ODIA DRIVE</h3>
+                  <p class="track-meta">Blue Harbor | 03:48 | MP4 Visual Mix</p>
+                </div>
+                <p class="track-description">
+                  Calm textures, soft beats, and dreamy coastal motion.
+                </p>
+              </div>
+            </article>
+
+            <article class="screen screen-3">
+              <div class="screen-media">
+                <video controls preload="metadata">
+                  <source src="ENGLISH.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="screen-info">
+                <div>
+                  <p class="track-tag">ENGLISH Pulse</p>
+                  <h3>ENGLISH ROCK Motion</h3>
+                  <p class="track-meta">Afterglow Crew | 05:01 | MP4 Visual Mix</p>
+                </div>
+                <p class="track-description">
+                  Street-style visuals paired with energetic electronic grooves.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="playlist">
+          <div class="playlist-head">
+            <div>
+              <p class="mini-label">Playlist</p>
+              <h2>Pick a session</h2>
+            </div>
+            <span>3 tracks</span>
+          </div>
+
+          <label for="video-1" class="playlist-card">
+            <span class="track-number">01</span>
+            <span class="card-copy">
+              <strong>Night Drive Echo</strong>
+              <small>Synthwave Set | 04:12</small>
+            </span>
+            <span class="play-badge">Play</span>
+          </label>
+
+          <label for="video-2" class="playlist-card">
+            <span class="track-number">02</span>
+            <span class="card-copy">
+              <strong>Ocean Lights</strong>
+              <small>Chill Ambient | 03:48</small>
+            </span>
+            <span class="play-badge">Play</span>
+          </label>
+
+          <label for="video-3" class="playlist-card">
+            <span class="track-number">03</span>
+            <span class="card-copy">
+              <strong>City Beat Motion</strong>
+              <small>Urban Pulse | 05:01</small>
+            </span>
+            <span class="play-badge">Play</span>
+          </label>
+
+          <div class="playlist-note">
+            Replace the sample file names in <code>index.html</code> with your
+            own MP4 videos inside an <code>assets</code> folder.
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
